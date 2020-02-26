@@ -1,0 +1,14 @@
+<div class = "project-list-container">
+
+<mat-card *ngFor="for let project of projects | async" class = "project-card" >
+
+<h1 class = "project-card-title">{{project.name}}</h1>
+<p class = "project-card-desc" >{{project.description}}</p>
+<div class = "tag-box">
+<div class = "tag-element" *ngFor="for let Key of (project.name| PortLangPipe | async)| keyvalue  "><h3 class = "lang-txt">{{Key.key}}</h3></div>
+</div>
+
+<button mat-raised-button color="primary" class = "project-button"><mat-icon>web</mat-icon><p class = "b-text">Demo</p></button>
+<button mat-raised-button color="primary" class = "project-button"><mat-icon>code</mat-icon><p class = "b-text">Source</p></button>
+</mat-card>
+</div>

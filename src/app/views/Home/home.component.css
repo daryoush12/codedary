@@ -1,0 +1,26 @@
+.banner-container{
+   
+    width: 100vw;
+    height: 400px;
+    background-image: url('../../../assets/img/space.png');
+    text-align: center;
+   
+}
+
+
+
+.banner-text {
+    color: white;
+    font-size: 34px;
+    padding-top: 5%;
+    font: 500 42px/42px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page-title {
+    font-size: 24px;
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+    font: 500 32px/32px Roboto, "Helvetica Neue", sans-serif;
+    
+}
