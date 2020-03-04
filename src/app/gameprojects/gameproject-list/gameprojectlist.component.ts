@@ -11,10 +11,11 @@ import { GameProject } from '../gameproject.model';
 
 export class GameProjectListComponent  {
 
-    gameprojects : Observable<GameProject>;
+    gameprojects : Observable<Map<string, Array<any>>>;
 
     constructor(private gpservice : GameProjectService) {
         this.gameprojects = gpservice.getAllGames();
+        console.log(this.gameprojects);
      }
 
  

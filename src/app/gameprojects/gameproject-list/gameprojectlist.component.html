@@ -1,7 +1,11 @@
 <div class = "project-list-container">
 
-<mat-card *ngFor="for let project of gameprojects.games | async" class = "project-card" >
-<h1 class = "project-card-title">{{project.title}}</h1>
-<p class = "project-card-desc" >{{project.short_text}}</p>
+<div *ngFor="for let Key of (gameprojects| async)| keyvalue">
+<mat-card *ngFor="for let game of Key.value" class = "project-card">
+<h1 class = "project-card-title">{{game.title}}</h1>
+<p class = "project-card-desc" >{{game.value.short_text}}</p>
 </mat-card>
+
+
+</div>
 </div>

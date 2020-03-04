@@ -1,0 +1,10 @@
+{
+    "/my-games": {
+      "target": "https://itch.io/api/1/c3Tevm9IqkFeI2q8oyJ8rptW8hNiBc0mQCod9emw",
+      "secure": true,
+      "pathRewrite": {
+      "^/my-games": ""
+    },
+      "changeOrigin": true
+    }
+}
