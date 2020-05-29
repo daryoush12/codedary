@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {HomeComponent} from './views/Home/home.component';
 import {ErrorComponent} from './views/Error/error.component';
 import {FooterComponent} from './footer/footer.component';
+import {BlogComponent} from './blogs/blog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainnavComponent } from './mainnav/mainnav.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -19,6 +20,7 @@ import { PortfolioListComponent } from './portfolio/portfolio-list/portfolio-lis
 import { MaterialModule } from './Material/material-module';
 import { PortfolioLanguangesPipe } from './portfolio/portfolio.pipe';
 import { GameProjectListComponent } from './gameprojects/gameproject-list/gameprojectlist.component';
+import { GraphQLModule } from './graphql.module';
 
 
 
@@ -36,6 +38,7 @@ const appRoutes: Routes = [
     MainnavComponent,
     HomeComponent,
     ErrorComponent,
+    BlogComponent,
     PortfolioListComponent,
     PortfolioLanguangesPipe,
     FooterComponent,
@@ -56,6 +59,7 @@ const appRoutes: Routes = [
     MatListModule,
     MaterialModule,
     HttpClientModule,
+    GraphQLModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

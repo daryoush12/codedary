@@ -1,0 +1,10 @@
+.blog-element {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.blog-list {
+    display: inline-flex;
+
+}

@@ -5,7 +5,7 @@
     transition: 0.2s ease-in-out;;
 }
 
-.project-card:hover {transform: scale(1.05);}
+.project-card:hover {transform: scale(1.02);}
 
 .project-list-container{
     display: flex;

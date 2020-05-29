@@ -14,16 +14,12 @@ export class PortfolioService {
 
     getAllProjects() : Observable<Portfolio[]>{
         const url = 'https://api.github.com/users/daryoush12/repos';
- 
         return this.http.get<Portfolio[]>(url);
     }
-    getProjectLanguanges(reponame : string) : Observable<Map<string, number>> {
-        
 
+    getProjectLanguanges(reponame : string) : Observable<Map<string, number>> {
         const url = 'https://api.github.com/repos/daryoush12/'+reponame+'/languages';
         console.log(url);
-       // console.log(this.http.get<any>(url));
-        
         return this.http.get<Map<string, number>>(url);
     }   
 }

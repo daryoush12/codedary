@@ -11,7 +11,7 @@ import { GameProject } from '../gameproject.model';
 
 export class GameProjectListComponent  {
 
-    gameprojects : Observable<Map<string, Array<any>>>;
+    gameprojects : Observable<Map<string, Object>>;
 
     constructor(private gpservice : GameProjectService) {
         this.gameprojects = gpservice.getAllGames();

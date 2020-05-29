@@ -10,8 +10,8 @@ const url = "https://itch.io/api/1/"
 export class GameProjectService {
     constructor(private http : HttpClient) { }
 
-    getAllGames() : Observable<Map<string, Array<any>>>{
-      return this.http.get<Map<string, Array<any>>>("https://itch.io/api/1/c3Tevm9IqkFeI2q8oyJ8rptW8hNiBc0mQCod9emw/my-games");
+    getAllGames() : Observable<Map<string, Object>>{
+      return this.http.get<Map<string, Object>>("http://127.0.0.1:5000/games/");
     }
 
 
