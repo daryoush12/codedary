@@ -21,6 +21,7 @@ import { MaterialModule } from './Material/material-module';
 import { PortfolioLanguangesPipe } from './portfolio/portfolio.pipe';
 import { GameProjectListComponent } from './gameprojects/gameproject-list/gameprojectlist.component';
 import { GraphQLModule } from './graphql.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -60,6 +61,7 @@ const appRoutes: Routes = [
     MaterialModule,
     HttpClientModule,
     GraphQLModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

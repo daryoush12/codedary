@@ -1,10 +1,13 @@
 .blog-element {
     width: 200px;
     height: 200px;
-    margin: 10px;
+    margin-left:auto;
+    margin-right:auto;  
+    vertical-align:middle;
 }
 
 .blog-list {
     display: inline-flex;
+    width: 100%
 
 }
